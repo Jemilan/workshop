@@ -1,0 +1,10 @@
+<section>
+    <br>
+   <h1 class="header"> <app-child2 [customerName]="name"></app-child2></h1>
+   <br>
+    <input type="text" [(ngModel)]="city">
+    <br>
+
+<app-child (update)="display($event)"></app-child>
+
+</section>

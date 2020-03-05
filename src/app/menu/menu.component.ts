@@ -7,7 +7,7 @@ import {MenuItem} from 'primeng/api';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
- private data:any;
+  data:any;
   constructor(private menuService:MenuService) { }
 
   ngOnInit() {

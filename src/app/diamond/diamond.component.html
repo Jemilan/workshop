@@ -19,7 +19,6 @@
 
      <tr mat-header-row *matHeaderRowDef="localdata"></tr>
      <tr mat-row *matRowDef="let row;columns:localdata;"></tr>
-     <mat-text-column name="title">Score</mat-text-column>
 </table> 
 <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
 </div>

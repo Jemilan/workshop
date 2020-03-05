@@ -5,6 +5,8 @@ import { first } from 'rxjs/operators';
 import {User} from "../models/user";
 import {UserService} from "../services/userservice";
 import {AuthService} from "../services/authservice";
+import {ReuseablesampleComponent} from "internalrepository";
+
 //import * as dbconfig from 'config';
 @Component({
   selector: 'login-app',
@@ -16,7 +18,7 @@ import {AuthService} from "../services/authservice";
 //Template driven form
 export class LoginComponent {
   model = new User('admin','admin@123');
-  private status:boolean=true;
+   status:boolean=true;
   submitted = false;
 
   constructor(private zone: NgZone,private router:Router,private userService:UserService,private authService:AuthService,private myRoute:Router)
